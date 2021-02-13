@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background:url(robin-denker.github.io/img/bg.gif);
+    background:url(img/bg.gif);
     background-attachment: fixed;
     background-size: cover;
     margin:0;
