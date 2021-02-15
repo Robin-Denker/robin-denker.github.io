@@ -44,7 +44,7 @@ p{
     padding-top: 0.5em;
     padding-bottom: 0.3em;
     padding-bottom: 0.3em;
-    animation: type 10s steps(27);
+    animation: type 7s steps(27);
     animation-iteration-count: infinite;
     overflow: hidden;
     white-space: nowrap;
