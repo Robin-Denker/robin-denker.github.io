@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap';
+/* variables */
+/* body */
+body {
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
+  background-color: #0f0f0f;
+  line-height: 1.6;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+}
+
+/* links */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* headers */
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+/* navbar */
+.navbar {
+  background-color: #44374d;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
