@@ -9,37 +9,57 @@ body{
     line-height: 1.6;
     
 }
-//landing page
+
+//navbar
+.navbar{
+    background-color: $d-dark-bg;
+    color: $dark-text;
+    position: relative;
+    h1{
+        color: $headings;
+    }
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    padding: 10px;
+    margin: 0 3px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: $light-secondary;
+    border-bottom: 1px solid $headings;
+}
+
+//landing page 
 .landing-page{
     background-color: $dark-bg;
-    position: relative;
     height: 100vh;
-}
-
-.landing-page h1{
-    padding: 15px;
-    font-size: 150px;
-    font-family: lobster, cursive;
-    line-height: 5rem;
-    color: $dark-text;
-    
-}
-.landing-page h3{
-    margin-left: 25px;
     color: $dark-text;
 }
-.landing-page title{
-    text-align: center;
+.landing-page .container{
+    h1{
+        font-size: 40px;
+        color: $headings;
+    }
+    p{
+        padding-bottom: 15px;
+    }
+    a{
+        padding-left: 5px;
+        color: $dark-text;
+    }
+}
+.btn{
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid  $dark-text;
 }
 
-.picture{
-    padding: 15px;
+.btn:hover{
+    color: $light-secondary;
+    border: 2px solid $headings;
 }
-.picture img{
-    width: 270px;
-    height: 270px;
-    border: 5px solid $dark-secondary;
-    border-radius: 50%;
-    align-content: center;
-}
-
