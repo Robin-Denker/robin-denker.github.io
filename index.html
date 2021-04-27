@@ -27,6 +27,9 @@
         <div class="container">
             <!--About-->
             <section id='Main' class="grid container__section">
+                <div class='avatar'>
+                    <img src='assets/placeholder.jpg'>
+               </div>
                <div class='textbox'>
                 <h1>Somthing important</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -38,9 +41,6 @@
                      necessitatibus itaque, doloremque impedit. Porro saepe 
                      sapiente deserunt, eius ab suscipit quo totam ad est 
                      praesentium laborum quaerat?</p>
-               </div>
-               <div class='avatar'>
-                    <img src='assets/placeholder.jpg'>
                </div>
             </section>
             <!--Projects-->
@@ -62,12 +62,17 @@
                             sapiente deserunt, eius ab suscipit quo totam ad est 
                             praesentium laborum quaerat?</p>
                    </div>
-                   <form action="https://getform.io/f/1b94d054-d2bc-41ce-9cd0-c451a3c3e6b6" method="POST">
-                        <input type="text" name="name">
-                        <input type="email" name="email">
-                        <input type="text" name="message">
-                        <button type="submit">Send</button>
-                    </form>
+                   <div class="card">
+                       <form  action="https://getform.io/f/1b94d054-d2bc-41ce-9cd0-c451a3c3e6b6" method="POST">
+                            <p>Name:</p>
+                            <input type="text" name="name" placeholder="Name...">
+                            <p>E-Mail:</p>
+                            <input type="email" name="email" placeholder="Email...">
+                            <p>Message:</p>
+                            <textarea rows='5' cols='50' id='text' type="text" name="message" placeholder='Message...'></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div> 
             </div>
           </section>
         </div>

@@ -13,19 +13,31 @@ a {
 body {
   color: honeydew;
   background-image: url(../assets/Endless-Constellation.svg);
+  line-height: 1.6em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #333;
+}
+form input {
+  width: 100%;
+}
+form textarea {
+  height: 150px;
 }
 
 .textbox {
-  margin: 10px;
-  padding: 10px;
+  margin-top: 10px;
 }
 .textbox h1 {
   padding: 5px;
 }
 
 .avatar {
-  margin: 10px;
-  padding: 10px;
+  margin: 30px;
 }
 .avatar img {
   width: 250px;
@@ -53,6 +65,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 20px;
+  justify-items: center;
 }
 
 #hamnav {
@@ -64,7 +77,8 @@ body {
 }
 
 /* Hide Hamburger */
-#hamnav label, #hamburger {
+#hamnav label,
+#hamburger {
   display: none;
 }
 
@@ -85,13 +99,26 @@ body {
   background: #9c8cc5;
 }
 
+.card {
+  background: white;
+  margin: 15px;
+  border-radius: 10%;
+  box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 450px;
+}
+
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
   /* Show Hamburger Icon */
+  #hamnav {
+    background: none;
+  }
+
   #hamnav label {
     display: inline-block;
     color: white;
-    background: #9c8cc5;
+    background: none;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
@@ -116,14 +143,31 @@ body {
 
   .grid {
     grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .container__section {
+    height: 100%;
   }
 
   .avatar {
-    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .avatar img {
+    width: 150px;
+    height: 150px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .avatar {
     display: none;
+  }
+
+  .card {
+    margin: 0;
+    width: 70vw;
   }
 }/*# sourceMappingURL=style.css.map */
