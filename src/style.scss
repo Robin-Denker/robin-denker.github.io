@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -31,19 +32,27 @@ form {
 }
 
 .textbox {
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: left 2s ease-out;
   h1 {
     padding: 5px;
+    vertical-align: middle;
   }
 }
 
 .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 30px;
+  animation: float 6s ease-in-out infinite;
   img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 5px solid #3a2f60;
+    width: 500px;
+    height: 500px;
+    filter: invert(100%);
   }
 }
 //utils
@@ -100,7 +109,10 @@ form {
 }
 
 .card {
-  background: white;
+  p {
+    color: honeydew;
+  }
+  background: #3a2f60;
   margin: 15px;
   border-radius: 10%;
   box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -111,9 +123,8 @@ form {
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
   /* Show Hamburger Icon */
-  #hamnav{
-      background:none;
-      
+  #hamnav {
+    background: none;
   }
   #hamnav label {
     display: inline-block;
@@ -140,34 +151,62 @@ form {
   #hamnav input:checked ~ #hamitems {
     display: block;
   }
- 
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
 
-  .container__section{
-      height: 100%;
+  .container__section {
+    height: 90vh;
   }
 
   .avatar {
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
-      img{
-        width: 150px;
-        height: 150px;
-
-      }
+    img {
+      width: 300px;
+      height: 300px;
+    }
   }
 }
 @media screen and (max-width: 480px) {
   .avatar {
-    display: none;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 250px;
+      height: 250px;
+    }
   }
-  .card{
-      margin: 0;
-      width: 70vw;
+  .card {
+    margin: 0;
+    width: 70vw;
   }
 }
+//Animations
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+
+@keyframes left {
+  from {
+    transform: translatex(500px);
+  }
+
+  to {
+    transform: translatex(0px);
+  }
+}
+
