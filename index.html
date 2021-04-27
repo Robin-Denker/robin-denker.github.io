@@ -7,30 +7,74 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Welcome!</title>
 </head>
+    <header>
+        <!-- navigation -->
+        <nav id="hamnav">
+            <!-- [THE HAMBURGER] -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+           
+            <!-- [MENU ITEMS] -->
+            <div id="hamitems">
+              <a href="index.html">Home</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </nav>          
+    </header>
     <body>
-        <header class="header">
-            <nav>
-                <h3>menu</h3>
-            </nav>
-        </header>
-        <div class="main container">
-            <section class="home container__section">
-                <div id='image'>
-                    <h1>img goes here</h1>
-                </div>
-                <div id='title'>
-                    <h1> Hey, I'm Robin</h1>
-                    <p>a Application Development Apprentice</p>
-
-                </div>
+        <!--Main Content-->
+        <div class="container">
+            <!--About-->
+            <section id='Main' class="grid container__section">
+               <div class='textbox'>
+                <h1>Somthing important</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Excepturi provident, aliquid deleniti praesentium reiciendis 
+                    dignissimos, voluptatem consequuntur natus aperiam quod,
+                     magnam architecto tempora nesciunt quisquam qui. Quam vitae 
+                     placeat neque. Lorem ipsum dolor sit amet consectetur 
+                     adipisicing elit. Officiis voluptate nesciunt odio 
+                     necessitatibus itaque, doloremque impedit. Porro saepe 
+                     sapiente deserunt, eius ab suscipit quo totam ad est 
+                     praesentium laborum quaerat?</p>
+               </div>
+               <div class='avatar'>
+                    <img src='assets/placeholder.jpg'>
+               </div>
             </section>
-            <section class="about container__section">
-                <h1>about</h1>
+            <!--Projects-->
+            <section id ='projects' class="container__section">
+                <h1>blaaaaaaaaaaaaaa</h1>
             </section>
-            <section class="projects container__section">
-                <h1>Projects</h1>
-            </section>
+            <!--Contact Form-->
+            <section id= 'contact' class="container__section">
+               <div class='grid'>
+                   <div class='textbox'>
+                       <h1>Somthing important</h1>
+                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                           Excepturi provident, aliquid deleniti praesentium reiciendis 
+                           dignissimos, voluptatem consequuntur natus aperiam quod,
+                            magnam architecto tempora nesciunt quisquam qui. Quam vitae 
+                            placeat neque. Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Officiis voluptate nesciunt odio 
+                            necessitatibus itaque, doloremque impedit. Porro saepe 
+                            sapiente deserunt, eius ab suscipit quo totam ad est 
+                            praesentium laborum quaerat?</p>
+                   </div>
+                   <form action="https://getform.io/f/1b94d054-d2bc-41ce-9cd0-c451a3c3e6b6" method="POST">
+                        <input type="text" name="name">
+                        <input type="email" name="email">
+                        <input type="text" name="message">
+                        <button type="submit">Send</button>
+                    </form>
+            </div>
+          </section>
         </div>
+        <!--Footer-->
+        <footer id='footer" class='footer'>
+            <p>footer</p>
+        </footer>
     </body>
 </html>
  
