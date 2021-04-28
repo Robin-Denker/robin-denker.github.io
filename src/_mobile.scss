@@ -1,0 +1,64 @@
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+    /* Show Hamburger Icon */
+    #hamnav {
+      background: none;
+    }
+    #hamnav label {
+      display: inline-block;
+      color: white;
+      background: none;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* Break down menu items into vertical */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems {
+      display: none;
+    }
+  
+    #hamnav input:checked ~ #hamitems {
+      display: block;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
+  
+    .container__section {
+      height: 90vh;
+    }
+  
+    .avatar {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .avatar {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .card {
+      margin: 0;
+      width: 70vw;
+    }
+  }

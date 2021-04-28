@@ -8,6 +8,27 @@
     <title>Welcome!</title>
 </head>
     <body>
+        <header>
+            <nav id="hamnav">
+                <!-- THE HAMBURGER -->
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
+               
+                <!-- MENU ITEMS -->
+                <div id="hamitems">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="tech.html">Projects</a>
+                  <a href="games.html">Contact</a>
+                </div>
+              </nav>
+              <label class="label_switch">
+                <input type="checkbox" class="label__input" />
+            
+                <!-- Circle -->
+                <div class="label__circle"></div>
+            </label>
+        </header>
         <!--Main Content-->
         <div class="container">
             <section id='landing-page' class='grid container__section'>
@@ -17,11 +38,11 @@
                <div class='textbox'>
                    <h1>“Progress is possible only if we train ourselves to think about programs without thinking of them as pieces of executable code. ”
                     ― Edsger W. Dijkstra </h1>
-                    <a href='#Main'>Enter</a>
+                    <a href='#Main' class='btn'>Enter</a>
                </div>
             </section>
             <!--About-->
-            <section id='Main' class="grid container__section">
+            <section id='Main' class="main grid container__section">
                 <div class='avatar'>
                     <img src='assets/saturn(1).png'>
                </div>
@@ -77,5 +98,6 @@
             <p>footer</p>
         </footer>
     </body>
+    <script src="https://kit.fontawesome.com/06375180ee.js" crossorigin="anonymous"></script>
 </html>
  
